@@ -1,0 +1,40 @@
+syscall index: 141. ....., rsp: 7fffffffdea0. 
+int3 invoked. saved rip: ffffffff810b9440. saved rsp: ffffc90001487f30, saved_rflags: 206, ret address on stack: ffffffff81004207. 
+rax: ffffffff810b9440, rdi:ffffc90001487f58, rsi: ffffc90001487f58, rdx: 0. 
+nice value: 19. 
+fs_base: 7ffff7fdf4c0, gs_base:ffff88813bb00000 . 
+-------To symexecutor due to symbolic operand at rip ffffffff810b9466 . mov 0x70(%rdi),%r14. insn idex: b. sym executed insn: 0
+-------To symexecutor due to symbolic operand at rip ffffffff810b946a . cmp $0x2,%r14d. insn idex: c. sym executed insn: 1
+oi1 index: 18010f0e, is sym: 1 .
+oi2 index: 2, is sym: 0 .
+++++++++++depend on sym flag, create constraint at rip ffffffff810b946e
+LNot(Ugt(Sub(0x2,Extract(Combine(0x0,which_rdi), 0, 4))))
+-------To symexecutor due to symbolic operand at rip ffffffff810b94a5 . cmp $0x1,%r14d. insn idex: 22. sym executed insn: 2
+oi1 index: 18010f0e, is sym: 1 .
+oi2 index: 1, is sym: 0 .
+++++++++++depend on sym flag, create constraint at rip ffffffff810b94a9
+LNot(Equal(Sub(0x1,Extract(Combine(0x0,which_rdi), 0, 4))))
+-------To symexecutor due to symbolic operand at rip ffffffff810b94ab . cmp $0x2,%r14d. insn idex: 24. sym executed insn: 3
+oi1 index: 18010f0e, is sym: 1 .
+oi2 index: 2, is sym: 0 .
+++++++++++depend on sym flag, create constraint at rip ffffffff810b94af
+LNot(Equal(Sub(0x2,Extract(Combine(0x0,which_rdi), 0, 4))))
+-------To symexecutor due to symbolic operand at rip ffffffff810b94b5 . test %r14d,%r14d. insn idex: 26. sym executed insn: 4
+++++++++++depend on sym flag, create constraint at rip ffffffff810b94b8
+Equal(And(Extract(Combine(0x0,which_rdi), 0, 4),Extract(Combine(0x0,which_rdi), 0, 4)))
+-------To symexecutor due to symbolic operand at rip ffffffff810d5afb . push %r14. insn idex: 93. sym executed insn: 5
+-------To symexecutor due to symbolic operand at rip ffffffff810d352b . push %r14. insn idex: a3. sym executed insn: 6
+-------To symexecutor due to symbolic operand at rip ffffffff810d3531 . lea 0xb64(%rdi),%r14. insn idex: a6. sym executed insn: 7
+-------To symexecutor due to symbolic operand at rip ffffffff810d35a9 . pop %r14. insn idex: df. sym executed insn: 8
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b4e . mov 0x9f0(%r12),%r14. insn idex: 158. sym executed insn: 9
+-------To symexecutor due to symbolic operand at rip ffffffff810d4586 . push %r14. insn idex: 162. sym executed insn: a
+-------To symexecutor due to symbolic operand at rip ffffffff810d5c32 . pop %r14. insn idex: d1b. sym executed insn: b
+-------To symexecutor due to symbolic operand at rip ffffffff810b94db . pop %r14. insn idex: d2f. sym executed insn: c
+t0: 43879cf9f4, t1: 438c3242c5, t: 49548d1. 
+SE ends~~~~~~~~~~~~, total insn 3377. symbolic flag depend insn: 4, symbolic executed insn: 13. 
+LNot(Ugt(Sub(0x2,Extract(Combine(0x0,which_rdi), 0, 4))))
+LNot(Equal(Sub(0x1,Extract(Combine(0x0,which_rdi), 0, 4))))
+LNot(Equal(Sub(0x2,Extract(Combine(0x0,which_rdi), 0, 4))))
+Equal(And(Extract(Combine(0x0,which_rdi), 0, 4),Extract(Combine(0x0,which_rdi), 0, 4)))
+SE ends~~~~~~~~~~~~, rax: 0. 
+OASIS stop: 0, exit reason: 0. 

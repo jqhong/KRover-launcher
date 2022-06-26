@@ -1,0 +1,7 @@
+kvm: 3
+vmfd: 4, vcpufd: 5. 
+vcpu size: 3000
+ready to run, hard_cr3: 0. 
+get guest context done !!!, sizeof arg_blk: 140
+child process id: 29561. 
+OASIS stop: 0, exit reason: 0. 

@@ -1,0 +1,169 @@
+map created : 414
+m_sts: 0x7f00008ee310, m_cr: 0x7f00008ee5e0, decoder: 0x7f000106d670 .
+low: 0. 
+high: fffffffffffff000. 
+nme_fsbase: 7f200000bb80. 
+test: 0x555555554760. c74800000000c6c7. 
+gdt base: 7f1000902000. 
+idx: 170, entry: a5286067. 
+rax: 0
+rbx: 0 rcx: 0 rdx: 0 rdi: 0 rsi: 0 r8: 0 r9: 0 r10: 0 
+rip: 0 
+rsp: 0 
+ei_shar_args at: 0x7f88000907000 
+t_rsp0 stack: fffffe0000036000. 
+t_rsp1 stack: ffffc9000007c000. 
+onsite receive request. 
+ei_shar_args->rip: 55555555474e, rsp: 7fffffffdea0. 
+ei_shar_args at: 0x7f1000907000 
+target rip: 0x555555554751, target code: 480000008dc0c748. 
+syscall entry at: 0xffffffff81c00010, code: 2524894865f8010f. 
+redirected page start from :0x7f000106e000. ends : 0x7f0001076000. 
+new_va: 7f000106f000. ker_addr: ffffffff810b9000. 
+about to issue hyper call to redirect page: ffffffff810b9000 .
+install probe at: ffffffff810b9440. 
+syscall index: 141. ....., rsp: 7fffffffdea0. 
+int3 invoked. saved rip: ffffffff810b9440. saved rsp: ffffc900027c3f30, saved_rflags: 206, ret address on stack: ffffffff81004207. 
+rax: ffffffff810b9440, rdi:ffffc900027c3f58, rsi: ffffc900027c3f58, rdx: 0. 
+nice value: 19. 
+fs_base: 7ffff7fdf4c0, gs_base:ffff88813bb00000 . 
+-------To symexecutor due to symbolic operand at rip ffffffff810b9479 . mov 0x68(%rdi),%rbx. insn idex: 10. sym executed insn: 0
+-------To symexecutor due to symbolic operand at rip ffffffff810b9575 . test %ebx,%ebx. insn idex: 28. sym executed insn: 1
+++++++++++depend on sym flag, create constraint at rip ffffffff810b9577
+LNot(Distinct(And(Extract(Combine(0x0,who_rsi), 0, 4),Extract(Combine(0x0,who_rsi), 0, 4))))
+-------To symexecutor due to symbolic operand at rip ffffffff810b5fe0 . push %rbx. insn idex: 36. sym executed insn: 2
+-------To symexecutor due to symbolic operand at rip ffffffff810b5ffb . mov %esi,%ebx. insn idex: 3b. sym executed insn: 3
+-------To symexecutor due to symbolic operand at rip ffffffff814575bd . push %rbx. insn idex: 4b. sym executed insn: 4
+-------To symexecutor due to symbolic operand at rip ffffffff814575be . mov 0xffc6cb(%rip),%rbx. insn idex: 4c. sym executed insn: 5
+-------To symexecutor due to symbolic operand at rip ffffffff814575ed . pop %rbx. insn idex: 77. sym executed insn: 6
+-------To symexecutor due to symbolic operand at rip ffffffff810b6049 . movsxd %ebx,%rsi. insn idex: 7f. sym executed insn: 7
+-------To symexecutor due to symbolic operand at rip ffffffff810d5cfd . cmp %rsi,%rax. insn idex: 87. sym executed insn: 8
+oi1 index: 18010000, is sym: 0 .
+oi2 index: 18010006, is sym: 1 .
+++++++++++depend on sym flag, create constraint at rip ffffffff810d5d00
+LNot(Equal(Sub(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)),0x0)))
+Fix-me: thinctrl.cpp:1454 _mayOperandUseSymbol_XX
+0x14(%rsi)
+*****************expr size 2
+create expr in parseOperand 
+Add(0x14,SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)))-------To symexecutor due to symbolic operand at rip ffffffff810d5d02 . lea 0x14(%rsi),%rax. insn idex: 89. sym executed insn: 9
+-------To symexecutor due to symbolic operand at rip ffffffff810d5d06 . cmp $0x27,%rax. insn idex: 8a. sym executed insn: a
+oi1 index: 18010000, is sym: 1 .
+oi2 index: 27, is sym: 0 .
+++++++++++depend on sym flag, create constraint at rip ffffffff810d5d0a
+Ule(Sub(0x27,Add(0x14,SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)))))
+-------To symexecutor due to symbolic operand at rip ffffffff810d5af9 . push %r15. insn idex: 92. sym executed insn: b
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b01 . mov %rsi,%r13. insn idex: 96. sym executed insn: c
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b04 . push %rbx. insn idex: 97. sym executed insn: d
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b05 . lea 0xffffffc0(%rbp),%rsi. insn idex: 98. sym executed insn: e
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b09 . mov %rdi,%rbx. insn idex: 99. sym executed insn: f
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b10 . mov $0x28,%rax. insn idex: 9b. sym executed insn: 10
+-------To symexecutor due to symbolic operand at rip ffffffff810d352d . push %r13. insn idex: a4. sym executed insn: 11
+-------To symexecutor due to symbolic operand at rip ffffffff810d353f . mov $0x82442920,%r13. insn idex: aa. sym executed insn: 12
+-------To symexecutor due to symbolic operand at rip ffffffff810d35a7 . pop %r13. insn idex: de. sym executed insn: 13
+-------To symexecutor due to symbolic operand at rip ffffffff810d1875 . push %rbp. insn idex: f2. sym executed insn: 14
+-------To symexecutor due to symbolic operand at rip ffffffff810d4588 . push %r13. insn idex: 163. sym executed insn: 15
+-------To symexecutor due to symbolic operand at rip ffffffff810d458c . mov %edx,%r13d. insn idex: 165. sym executed insn: 16
+-------To symexecutor due to symbolic operand at rip ffffffff810e4f80 . push %r13. insn idex: 17e. sym executed insn: 17
+-------To symexecutor due to symbolic operand at rip ffffffff810e294d . push %r13. insn idex: 197. sym executed insn: 18
+-------To symexecutor due to symbolic operand at rip ffffffff810e11bd . push %r13. insn idex: 1a4. sym executed insn: 19
+-------To symexecutor due to symbolic operand at rip ffffffff810e11c1 . mov %rdi,%r13. insn idex: 1a6. sym executed insn: 1a
+-------To symexecutor due to symbolic operand at rip ffffffff810e1240 . pop %r13. insn idex: 222. sym executed insn: 1b
+-------To symexecutor due to symbolic operand at rip ffffffff810e1d18 . push %r13. insn idex: 22f. sym executed insn: 1c
+-------To symexecutor due to symbolic operand at rip ffffffff810e1d4d . mov 0xa48(%r15),%r13. insn idex: 23c. sym executed insn: 1d
+-------To symexecutor due to symbolic operand at rip ffffffff810e21a0 . pop %r13. insn idex: 3b4. sym executed insn: 1e
+-------To symexecutor due to symbolic operand at rip ffffffff810e29ed . mov %r13d,%r14d. insn idex: 3d2. sym executed insn: 1f
+-------To symexecutor due to symbolic operand at rip ffffffff810e29f5 . and $0x1,%r14d. insn idex: 3df. sym executed insn: 20
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a2e . test %r14d,%r14d. insn idex: 405. sym executed insn: 21
+++++++++++depend on sym flag, create constraint at rip ffffffff810e2a31
+LNot(Distinct(And(And(0x1,Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 0, 4)),And(0x1,Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 0, 4)))))
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a44 . and $0x6,%r13d. insn idex: 40b. sym executed insn: 22
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a4d . cmp $0x2,%r13d. insn idex: 412. sym executed insn: 23
+oi1 index: 18010f0d, is sym: 1 .
+oi2 index: 2, is sym: 0 .
+++++++++++depend on sym flag, create constraint at rip ffffffff810e2a51
+Equal(Sub(0x2,And(0x6,Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 0, 4))))
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a62 . pop %r13. insn idex: 417. sym executed insn: 24
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a64 . pop %r14. insn idex: 418. sym executed insn: 25
+-------To symexecutor due to symbolic operand at rip ffffffff810e4fb3 . or $0x1,%r13d. insn idex: 422. sym executed insn: 26
+-------To symexecutor due to symbolic operand at rip ffffffff810e4fc7 . mov %r13d,%edx. insn idex: 426. sym executed insn: 27
+-------To symexecutor due to symbolic operand at rip ffffffff810e294d . push %r13. insn idex: 42f. sym executed insn: 28
+-------To symexecutor due to symbolic operand at rip ffffffff810e2958 . mov %edx,%r13d. insn idex: 434. sym executed insn: 29
+-------To symexecutor due to symbolic operand at rip ffffffff810e11bd . push %r13. insn idex: 43c. sym executed insn: 2a
+-------To symexecutor due to symbolic operand at rip ffffffff810e11c1 . mov %rdi,%r13. insn idex: 43e. sym executed insn: 2b
+concrete decision is not consistent at RIP: ffffffff810e1218. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e1322 . mov %rbx,%rdx. insn idex: 453. sym executed insn: 2c
+concrete decision is not consistent at RIP: ffffffff810dd3c3. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810dd434. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810dcf8f. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810dcfb4. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e1240 . pop %r13. insn idex: 4b3. sym executed insn: 2d
+-------To symexecutor due to symbolic operand at rip ffffffff810e1d18 . push %r13. insn idex: 4c0. sym executed insn: 2e
+-------To symexecutor due to symbolic operand at rip ffffffff810e1d4d . mov 0xa48(%r15),%r13. insn idex: 4cd. sym executed insn: 2f
+concrete decision is not consistent at RIP: ffffffff810e1d71. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810f749b. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810f7641. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e1d81. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e1eac. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e21b1. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e21c0. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e213d. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e2359. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e2157. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e21a0 . pop %r13. insn idex: 63f. sym executed insn: 30
+-------To symexecutor due to symbolic operand at rip ffffffff810e29ed . mov %r13d,%r14d. insn idex: 65d. sym executed insn: 31
+-------To symexecutor due to symbolic operand at rip ffffffff810e29f5 . and $0x1,%r14d. insn idex: 66a. sym executed insn: 32
+concrete decision is not consistent at RIP: ffffffff810e29fd. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a2e . test %r14d,%r14d. insn idex: 679. sym executed insn: 33
+++++++++++depend on sym flag, create constraint at rip ffffffff810e2a31
+LNot(Distinct(And(And(0x1,Extract(Combine(Or	(0x1,Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 0, 4)),Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 4, 8)), 0, 4)),And(0x1,Extract(Combine(Or	(0x1,Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 0, 4)),Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 4, 8)), 0, 4)))))
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a44 . and $0x6,%r13d. insn idex: 67f. sym executed insn: 34
+concrete decision is not consistent at RIP: ffffffff810e1622. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e168f. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e13b9 . push %r14. insn idex: 6b5. sym executed insn: 35
+-------To symexecutor due to symbolic operand at rip ffffffff810e13bb . push %r13. insn idex: 6b6. sym executed insn: 36
+-------To symexecutor due to symbolic operand at rip ffffffff810e13bd . mov %rdx,%r13. insn idex: 6b7. sym executed insn: 37
+-------To symexecutor due to symbolic operand at rip ffffffff810e13cc . mov %rcx,%r14. insn idex: 6bd. sym executed insn: 38
+concrete decision is not consistent at RIP: ffffffff810e13d1. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e1545 . pop %r13. insn idex: 6fe. sym executed insn: 39
+-------To symexecutor due to symbolic operand at rip ffffffff810e1547 . pop %r14. insn idex: 6ff. sym executed insn: 3a
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a4d . cmp $0x2,%r13d. insn idex: 704. sym executed insn: 3b
+oi1 index: 18010f0d, is sym: 1 .
+oi2 index: 2, is sym: 0 .
+++++++++++depend on sym flag, create constraint at rip ffffffff810e2a51
+LNot(Equal(Sub(0x2,Extract(Combine(And(0x6,Extract(Combine(Or	(0x1,Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 0, 4)),Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 4, 8)), 0, 4)),Extract(Combine(Or	(0x1,Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 0, 4)),Extract(Combine(0xffffffff0000000a,Extract(SignEXT(Extract(Combine(0x13,Extract(Combine(0x0,who_rsi), 4, 8)), 0, 4)), 4, 8)), 4, 8)), 4, 8)), 0, 4))))
+concrete decision is not consistent at RIP: ffffffff810dcf94. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a62 . pop %r13. insn idex: 71b. sym executed insn: 3c
+-------To symexecutor due to symbolic operand at rip ffffffff810e2a64 . pop %r14. insn idex: 71c. sym executed insn: 3d
+concrete decision is not consistent at RIP: ffffffff810e4ff1. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e4fb3 . or $0x1,%r13d. insn idex: 726. sym executed insn: 3e
+concrete decision is not consistent at RIP: ffffffff810e4fba. static one: 0, runtime: 1. 
+concrete decision is not consistent at RIP: ffffffff810e54be. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e5537 . pop %r13. insn idex: 747. sym executed insn: 3f
+-------To symexecutor due to symbolic operand at rip ffffffff810d45cf . pop %r13. insn idex: 74f. sym executed insn: 40
+concrete decision is not consistent at RIP: ffffffff810d5b63. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e33c5 . push %rbp. insn idex: 76c. sym executed insn: 41
+-------To symexecutor due to symbolic operand at rip ffffffff810e33c9 . push %r13. insn idex: 76e. sym executed insn: 42
+concrete decision is not consistent at RIP: ffffffff810e3400. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e3416 . pop %r13. insn idex: 797. sym executed insn: 43
+concrete decision is not consistent at RIP: ffffffff810e34ec. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e33c9 . push %r13. insn idex: 7a3. sym executed insn: 44
+concrete decision is not consistent at RIP: ffffffff810e3400. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810e3416 . pop %r13. insn idex: 7cc. sym executed insn: 45
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b69 . add $0x78,%r13d. insn idex: 7d6. sym executed insn: 46
+-------To symexecutor due to symbolic operand at rip ffffffff810d5b75 . mov %r13d,0x68(%rbx). insn idex: 7d9. sym executed insn: 47
+-------To symexecutor due to symbolic operand at rip ffffffff810d0b8e . mov 0x68(%rdi),%eax. insn idex: 7de. sym executed insn: 48
+-------To symexecutor due to symbolic operand at rip ffffffff810d0b91 . sub $0x64,%eax. insn idex: 7df. sym executed insn: 49
+concrete decision is not consistent at RIP: ffffffff810d0ba1. static one: 0, runtime: 1. 
+-------To symexecutor due to symbolic operand at rip ffffffff810d0bf0 . mov %eax,%esi. insn idex: 7e5. sym executed insn: 4a
+-------To symexecutor due to symbolic operand at rip ffffffff810e730b . push %rbx. insn idex: 7ec. sym executed insn: 4b
+-------To symexecutor due to symbolic operand at rip ffffffff810e730c . movsxd %esi,%rbx. insn idex: 7ed. sym executed insn: 4c
+-------To symexecutor due to symbolic operand at rip ffffffff810e7312 . lea 0x80(%rdi),%rsi. insn idex: 7ef. sym executed insn: 4d
+symbolic mem address involved in Insn mov 0x82056200(,%rbx,4),%edx
+kvm: 3
+vmfd: 4, vcpufd: 5. 
+vcpu size: 3000
+ready to run, hard_cr3: 0. 
+get guest context done !!!, sizeof arg_blk: 140
+child process id: 25342. 
+OASIS stop: 0, exit reason: 0. 
